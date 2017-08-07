@@ -1,0 +1,7 @@
+npm install express-generator -g
+
+express -h
+
+express --view=pug backend
+
+DEBUG=myapp:* npm start
