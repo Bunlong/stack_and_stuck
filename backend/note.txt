@@ -4,4 +4,14 @@ express -h
 
 express --view=pug backend
 
-DEBUG=myapp:* npm start
+DEBUG=backend:* npm start
+
+============================
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET localhost:3000/questions
+
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET localhost:3000/questions/101
+
+curl -X POST --data "name=Toy story&year=1995&rating=8.5" http://localhost:3000/questions
+
+curl -X PUT --data "name=Toy story&year=1995&rating=8.5" http://localhost:3000/questions/101
+============================
